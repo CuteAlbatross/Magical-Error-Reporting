@@ -1,0 +1,8 @@
+count = 0
+def add(n):
+    global count
+    if count != 100:
+        count += n
+        add(n+1)
+add(1)
+print(count)
